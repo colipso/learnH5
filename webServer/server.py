@@ -20,7 +20,7 @@ class getData:
         callback = web.input().get('jsoncallback','onGetMessages')
         print web.input()
         print callback
-        returnText = "The return Data is " + str(int(random.random() *10) ) 
+        returnText = "The return Data is " + str(int(random.random() *100) ) 
         return "%s(%s)" %(callback,json.dumps(returnText)) 
 
 if __name__ == "__main__":
